@@ -1,0 +1,24 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = project.mod_version
+group = 'net.noopsnet'
+base { archivesName = 'noopsnet-account-link' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+repositories { mavenCentral() }
+neoForge {
+    enable { version = project.neo_version; disableRecompilation = true }
+    mods { noopsnet_account_link { sourceSet sourceSets.main } }
+    runs { smokeServer { server(); programArgument '--nogui'; gameDirectory = file('run/smoke'); jvmArguments.add '-Xmx2G' } }
+}
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+tasks.withType(JavaCompile).configureEach { options.release = 21; options.encoding = 'UTF-8' }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }
+tasks.named('runSmokeServer') { standardInput = System.in }
+
+// Include the public source license and resource notices in built artifacts.
+tasks.named('jar') { from('LICENSE'); from('NOTICE.md') }

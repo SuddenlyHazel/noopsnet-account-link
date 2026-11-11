@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MPL-2.0 (code); see NOTICE.md for artwork"
+[[mods]]
+modId="noopsnet_account_link"
+version="${version}"
+displayName="NoopsNet Account Link"
+authors="NoopsNet"
+description="Optional private Discord account linking through server commands. No client installation required."
+displayTest="IGNORE_SERVER_VERSION"
+[[dependencies.noopsnet_account_link]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.265,21.2)"
+side="SERVER"
+[[dependencies.noopsnet_account_link]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+side="SERVER"

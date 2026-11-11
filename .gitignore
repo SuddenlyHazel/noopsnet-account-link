@@ -1,0 +1,10 @@
+**/.gradle/
+**/build/
+**/run/
+**/.cache/
+**/__pycache__/
+*.pyc
+.env
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+*.mrpack
