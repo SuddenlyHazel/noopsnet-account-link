@@ -1,14 +1,14 @@
 {
-  "source_revision": "5e0a0f8b925cd26245225a413a52977eac1c99fd",
-  "snapshot_date": "2026-11-11",
+  "source_revision": "d6463f88e9578e94e8b4be256640902c8fca4776",
+  "snapshot_date": "2026-11-12",
   "project": "NoopsNet Account Link",
   "artifacts": [
     {
-      "filename": "noopsnet-account-link-0.1.1.jar",
-      "version": "0.1.1",
+      "filename": "noopsnet-account-link-0.1.2.jar",
+      "version": "0.1.2",
       "hashes": {
-        "sha1": "8a91501e1f204429d2339b530d97064d67f7c9d1",
-        "sha512": "902fae92c7d9c4b7b64d6977f4ef8c62456a16e652dad350bbc1ad5d9c1def78555200d261337dd93737a5966922aa12709ad7d3d577d290eac1a31b2c2775e6"
+        "sha1": "7f90e618907c9b313ccdb43c502afb5ad70fdc7f",
+        "sha512": "4eff18320bd4ca08be1c6527400af2cd5195cb5e4e6cd0fc3e87892fd0abc46214a78bff82e0e9d68494d31b74d912c1d4a4fa5558174ceb2b8af48a4ba1fc85"
       }
     }
   ]
